@@ -4,7 +4,7 @@
 
     <head>
         <meta charset='utf-8'/>
-        <title>TopoSketch Web App</title>
+        <title>GEMS Web App</title>
 
         <script type="text/javascript" src="./js/piwik/piwik.js"></script>
 
@@ -36,21 +36,26 @@
         <div class='container'>
                 <div class='header twelve columns'>
                     <h1 class='title '>TopoSketch</h1>
-                    <h5 style='margin-top:-0.4em;line-height:1.3em;'>Generating Animations by Sketching in Conceptual Space</h5>
+                    <h5 style='margin-top:-0.4em;line-height:1.3em;'>Generative Embedded Mapping Systems</h5>
 
                     <div class=''>
-                        <span class='four columns'>
-                        Ian Loh <br>
-                        <a href='mailto:lohjun@myvuw.ac.nz'>lohjun@myvuw.ac.nz</a>
-                        </span>
-
                         <span class='four columns'>
                         Tom White <br>
                         <a href='mailto:tom.white@vuw.ac.nz'>tom.white@vuw.ac.nz</a>
                         </span>
 
+                        <span class='four columns'>
+                        Phoebe Zeller<br>
+                        <a href='mailto:zellerphoe@myvuw.ac.nz'>zellerphoe@myvuw.ac.nz</a>
+                        </span>
+
+                        <span class='four columns'>
+                        Hannah Dockerty<br>
+                        <a href='mailto:zellerphoe@myvuw.ac.nz'>dockerhann@myvuw.ac.nz</a>
+                        </span>
+
                         <span class='four columns'> 
-                        <a href='https://github.com/vusd/toposketch/' target='_blank'>View on GitHub</a>
+                        <a href='https://github.com/vusd/gems/' target='_blank'>View on GitHub</a>
                         </span>
 
                     </div>
@@ -139,7 +144,7 @@
             
             <h4>Abstract</h4>
             <p>
-                We introduce a new sketch based interface for generating animations. Unlike traditional digital tools, ours is parameterized entirely by a neural network with no preprogrammed rules or knowledge representations. The capability of our sketching tool to support visual exploration and communication is demonstrated within the context of facial images, though our framework is domain independent. Our recorded sketches serve not only as a means for generating a specific animation, but also a standalone visual encapsulation of an animation’s semantic operation which can be reused and refined.
+We introduce a computational design workflow based on training examples: Generative Embedded Mapping Systems (GEMS). GEMS enable a designer to leverage embedded spaces to provide parametric systems with automatic mappings to future input data. Instead of specifying a rule-based system for mapping data based on predefined attributes, designers provide parameter values across a set of training examples. These training values serve as anchor points bridging a parameter and embedding space. Settings for new data can then be extrapolated from known pairs. A Neural Caricature application is examined as an example implementation of this workflow. The Neural Caricature architecture is more modular, upgradable, and can capture more nuance than systems using more traditional representation based mappings.
             </p>
             <!--<p>
                 TopoSketch is a tool for prototyping facial animations by sketching gestures. Posing and animating a believable face is a complex process, requiring many different features to work in tandem (eg: the eyes narrowing during a smile). Using neural networks, TopoSketch creates a high level expression based control that simplies this process. Drawn gestures are then used to control the blending and timing between different expressions to create an animation. 
